@@ -1,0 +1,130 @@
+
+/* var TUspeeddial_sizeImage = 18;	//in px (optimices for 22px) */
+.TUspeeddial_button{
+/* 	min-height: 18px; 			/* exist also in js */
+/* 	min-width: 18px; 			/* exist also in js */
+	cursor: pointer;
+}
+.TUspeeddial_list{
+	/* position: absolute; funktioniert, aber "reagiert" zu langsam....ka wieso*/
+	box-shadow: 4px 4px 6px #888888;
+	z-index: 999999;
+	background-color: white;
+	padding: 15px;				/* exist also in js */
+	border: 2px solid #eaeaea;
+	border-radius: 5px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	transition: opacity 0.3s;
+	left: 0;
+	right: auto;
+	box-sizing: content-box;
+}
+
+.TUspeeddial_link:hover{
+	border: 1px solid #86aa9e;
+	opacity: 1;
+	padding: 4px;
+}
+
+.TUspeeddial_list .speech{
+	background-size: 100px 1900px;
+	background-position: 0 -22px;
+	width: 35px;
+	height: 20px;
+	position: absolute;
+/*	height: 20px;
+	width: 35px; */
+	top: -18px;
+}
+
+.TUspeeddial_list .speech.inverse{
+	background-position: 0 -42px;
+}
+
+@media (min-width: 900px){
+	.TUspeeddial_link:hover span{
+	visibility: visible;
+	}
+}
+
+@media (min-width: 900px){
+	.TUspeeddial_link span{
+	visibility: hidden;
+	}
+}
+
+/* .TUspeeddial_list.visible{
+
+} */
+
+/* .TUspeeddial_list.invisible{
+	top: -9999px;
+	opacity: 0;
+}*/
+
+.TUspeeddial_list.left{
+	left: auto;
+	right: 0;
+}
+
+.TUspeeddial_link{
+	text-align: center;
+	width: 70px;			/* exist also in js */
+	height: 90px;			/* exist also in js (linkheight + linktext)*/
+	display: block;
+	position: absolute;
+	padding: 5px;			/* exist also in js */
+	text-decoration: none !important;
+	opacity: 0.6;
+	box-sizing: content-box;
+}
+
+.TUspeeddial_image{
+	width: 70px;
+	height: 70px;
+}
+
+.TUspeeddial_text{
+	color: #000;
+}
+
+.TUspeeddial_footer{
+	position: relative;
+	height: 30px;
+	padding-top: 1px;
+	/* bottom: 5px; WITH position absolute and witdh*/
+}
+
+
+.TUspeeddial_more{
+	display: block;
+	text-decoration: none;
+	color: #000;
+	/* background-color: #eee;*/
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	border-bottom: 1px solid #bbb;
+	margin-bottom: 5px;
+	padding: 5px 0;
+	text-align: center;
+	box-shadow: 1px 1px 1px #ddd;
+}
+.TUspeeddial_more:hover{
+	text-decoration: none;
+	color: #000;
+}
+
+.TUspeeddial_copyright{
+        float: left;
+        color: #c50e1f;
+        text-decoration: none;
+        font-size: 11px;
+}
+
+.TUspeeddial_readme{
+	float: right;
+	text-decoration: none;
+	font-size: 11px;
+	font-weight: lighter;
+	color: #c50e1f;
+}
